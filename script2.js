@@ -53,6 +53,7 @@ function createRegistrationForm() {
   const nameInput = document.createElement("input");
   nameInput.setAttribute("type", "text");
   nameInput.setAttribute("id", "name");
+  nameInput.placeholder = "Inserisci il tuo nome";
   registratioForm.appendChild(nameInput);
 
   const saveButtom = document.createElement("button");
@@ -70,7 +71,6 @@ function removeName() {
   document.getElementById("displayName").textContent = "";
   const nameInput = document.getElementById("name");
   nameInput.value = "";
-  nameInput.placeholder = "Inserisci il tuo nome";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
